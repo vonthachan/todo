@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         addButton = findViewById(R.id.btnAddTodo)
-        val data = Tasks().taskList()
+        val data = Tasks().get()
         val todoAdapter = TodoAdapter(data)
 
         val recyclerView: RecyclerView = findViewById(R.id.recycler_view)
